@@ -6,6 +6,8 @@ import NeoArray  from '../util/Array.mjs';
  * @extends Neo.component.Base
  */
 class Base extends Component {
+    foo = 'bar'
+
     static getStaticConfig() {return {
         /**
          * Valid values for iconPosition

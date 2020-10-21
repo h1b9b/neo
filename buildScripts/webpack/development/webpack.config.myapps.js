@@ -1,3 +1,13 @@
+/**
+ * Changing the webpack based parser (acorn) to support public class fields inside builds.
+ * Remove this code once webpack supports them out of the box.
+ * See: https://github.com/neomjs/neo/issues/1228
+ */
+const classFields = require('acorn-class-fields'),
+      acorn       = require('acorn');
+
+acorn.Parser = acorn.Parser.extend(classFields);
+
 const fs                = require('fs'),
       buildTarget       = require('./buildTarget.json'),
       path              = require('path'),

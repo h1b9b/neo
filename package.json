@@ -34,6 +34,8 @@
     "homepage": "https://neomjs.github.io/pages/",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.14.0",
+        "acorn": "^8.0.4",
+        "acorn-class-fields": "^0.3.7",
         "autoprefixer": "^9.8.6",
         "chalk": "^4.1.0",
         "clean-webpack-plugin": "^3.0.0",
